@@ -78,6 +78,13 @@
   background-size: contain;
 }
 
+.slide-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: right;
+}
+
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .navi-list {
