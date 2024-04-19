@@ -18,25 +18,27 @@ window.addEventListener("load", function () {
         const data = result[i];
         // 템플릿 문법 필요 (html)
         const test = `<div class="swiper-slide">
-          <a href="${data.url}" style="background:url('./images/${data.pic}') no-repeat center / cover; ">
+          <a href="${data.url}" style="background:url('./images/${data.pic}') no-repeat center; background-size: cover;">
             <p class="slide-title">
               ${data.title}
             </p>
           </a>
         </div>`;
-        slideTags += test;
+        slideTags = slideTags + test;
       }
+
       // 2. 자료를 이용해서 슬라이드에 배치할 html 을 만든다.
       // 원하는 장소에 출력해 보자.
-      const whereTag = this.document.querySelector(".topslide .swiper-wrapper");
+      const whereTag = document.querySelector(".topslide .swiper-wrapper");
       whereTag.innerHTML = slideTags;
 
+      // 3. html 완성후 swiper 를 생성한다.
       // 기본코드를 넣어보자.
-      var topSlide = new Swiper(".topslide", {
+      const topSlide = new Swiper(".topslide", {
         loop: true,
         speed: 800,
         autoplay: {
-          delay: 1500,
+          delay: 2500,
           disableOnInteraction: false,
         },
         pagination: {
@@ -48,6 +50,4 @@ window.addEventListener("load", function () {
     .catch(error => {
       console.log(error);
     });
-
-  // 3. html 완성후 swiper 를 생성한다.
 });

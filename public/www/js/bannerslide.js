@@ -20,9 +20,9 @@ window.addEventListener("load", function () {
       whereTag.innerHTML = tagS;
       const bannerSlide = new Swiper(".bannerslide", {
         loop: true,
-
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     })

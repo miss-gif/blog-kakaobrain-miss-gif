@@ -1,4 +1,8 @@
 [
-  { "pk": 1, "pic": "p1.png", "url": "#", "title": "AI 헬스케어의 <br/> 마일스톤을 찍다" },
-  { "pk": 4, "pic": "p4.png", "url": "#", "title": "칼로리의 꿈 <br/> 시리즈 ③" }
+  {
+    "pk": 1,
+    "title": "영입 중",
+    "url": "#",
+    "pic": "br.png"
+  }
 ]
