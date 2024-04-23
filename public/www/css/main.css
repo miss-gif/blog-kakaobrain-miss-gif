@@ -218,6 +218,9 @@
   height: 100%;
   overflow: visible !important;
 }
+.cardslide .swiper-wrapper {
+  display: block;
+}
 
 /* 반응형 */
 @media all and (max-width: 1024px) {
@@ -295,5 +298,8 @@
   .card-link {
     width: 240px;
     height: 266px;
+  }
+  .cardslide .swiper-wrapper {
+    display: flex;
   }
 }
