@@ -112,13 +112,22 @@
 /* 모바일 메뉴 관련 */
 /* 모바일 메뉴 : 배경 */
 .mb-header-bg {
+  display: none;
   position: fixed;
   left: 0;
   top: 70px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
+}
+
+.mb-header-bg-show {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
 }
 
 /* 모바일 메뉴 : 내용 */
@@ -150,4 +159,9 @@
 }
 .mb-nav li a:hover {
   color: #1f24ff;
+}
+
+.mobile-menu-open {
+  background: url("../images/icon/icon-close.png") no-repeat center !important;
+  background-size: contain !important;
 }
