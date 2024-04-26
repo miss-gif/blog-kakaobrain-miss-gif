@@ -46,6 +46,14 @@ window.addEventListener("load", function () {
           clickable: true,
         },
       });
+      // 4. 마우스 호버 시 슬라이드를 일시 멈춤 및 재실행
+      const slideArea = this.document.querySelector(".topslide");
+      slideArea.addEventListener("mouseenter", function () {
+        topSlide.autoplay.stop();
+      });
+      slideArea.addEventListener("mouseleave", function () {
+        topSlide.autoplay.start();
+      });
     })
     .catch(error => {
       console.log(error);
